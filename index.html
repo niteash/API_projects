@@ -5,21 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .nav-bar{
+        display: flex;
+        margin: 2rem;
+    }
+    .nav-bar nav{
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+
+    }
+
+    .nav-bar a{
+        padding: 10px;
+    }
+
+    .main{
+        display: grid;
+        gap: 2rem;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+    border: 1px solid #ccc; 
+    padding: 1rem;
+    border-radius: 8px;
+}
+</style>
 <body>
-    <nav>
-     <a href="./cat.html">Cat</a>
-    </nav>
-    <h1>Harry Potter Stories</h1>
-    <p>There are 100 of characters are in Harry Potter</p>
-    
-    <button id="btn">Show characters</button>
-    <ol id="list"></ol>
+    <div class="nav-bar">
+        <nav>
+            <a href="./cat.html">Cat</a>
+            <a href="./cat.html">Cat</a>
+            <a href="./cat.html">Cat</a>
+            <a href="./cat.html">Cat</a>
+            <a href="./cat.html">Cat</a>
+            <a href="./cat.html">Cat</a>
+
+
+           </nav>
+    </div>
+
+    <div class="main">
+        <section id="section-1">
+            <h1>Harry Potter Stories</h1>
+            <p>There are 100 of characters are in Harry Potter</p>
+            
+            <button id="btn">Show characters</button>
+            <ol id="list"></ol>
+        </section>
+        <section id="section-2">
 
     <h1>Harry Potter Book</h1>
     <p>These are harry potter book</p>
+    <button id="bookbtn">Show Book</button>
+
     <ul id="book"></ul>
 
-    <button id="bookbtn">Show Book</button>
+
+        </section>
+
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./app.js"></script>
